@@ -1,65 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Open+Sans:wght@800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 30px;
-  }
-  
-  .logo {
-    margin-bottom: 20px;
-  }
-  
+  background-color: #000;
+  background-image: url(wallpaper.png);
+  background-attachment: fixed;
+  /* background: rgb(255, 95, 2); */
+  /* background-repeat: no-repeat;
+  background: linear-gradient(180deg, rgba(255, 95, 2, 1) 0%, rgba(224, 0, 0, 1) 27%, rgba(0, 0, 0, 1) 95%); */
+  color: #fff;
+  /* font-family: Arial, sans-serif; */
+  text-align: center;
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+#leaderboard-container {
+  border-radius: 50px;
+}
+
+table {
+  /* border-collapse: collapse; */
+  width: 60%;
+  margin: auto auto;
+  margin-bottom: 20px;
+  /* border: 2px solid #fff; */
+  background-color: rgba(134, 134, 134, 0.219);
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+
+table:hover{
+  border: 1px solid #ffffff;
+  transition: border 0.5s ease-in-out;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+  border-radius: 10px;
+  /* gap:20px; */
+}
+
+
+h1 {
+  font-size: 4rem;
+}
+
+h1:hover {
+  cursor: pointer;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: background 5s ease-in-out;
+}
+
+th {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+td {
+  background-color: #222;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #333;
+}
+
+.input-container {
+  margin-bottom: 30px;
+}
+
+.input-container input {
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+button {
+  border-radius: 50px;
+  background-color: #ff0000;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #990000;
+  color: white;
+  transition: box-shadow 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: rgb(255, 196, 0) 0px 50px 100px -20px, rgb(255, 208, 0) 0px 30px 60px -30px;
+}
+
+img {
+  border-radius: 40%;
+  /* border: 1px solid white; */
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(218, 51, 0, 0.781) 0px 30px 60px -12px, rgba(207, 7, 7, 0.678) 0px 18px 36px -18px;
+}
+
+
+@media screen and (max-width: 768px) {
   table {
-    border-collapse: collapse;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border: 2px solid #fff;
-    background-color: #111;
+    width: 100%;
+    /* margin:20px; */
   }
-  
-  th, td {
-    padding: 15px;
-    text-align: left;
-    font-size: 18px;
-  }
-  
-  th {
-    background-color: #ff0000;
-    color: #fff;
-  }
-  
-  td {
-    background-color: #222;
-    color: #fff;
-  }
-  
-  tr:hover {
-    background-color: #333;
-  }
-  
-  .input-container {
-    margin-bottom: 30px;
-  }
-  
+
+  ;
+
   .input-container input {
-    margin-right: 10px;
-    font-size: 16px;
-    padding: 5px;
-    width: 150px;
+    width: 100%;
   }
-  
-  button {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+
+  ;
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  button:hover {
-    background-color: #990000;
+
+  ;
+
+  .input-container button {
+    width: 100%;
   }
+
+  ;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  ;
+}
